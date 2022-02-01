@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Henny+Penny&display=swap');
+
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(255, 255, 255), rgb(255, 238, 143));
+    }
+
+#todo-box {
+    
+    min-height: 300px;
+    width: 40%;
+    margin: 0 auto;
+    
+
+}
+
+#todo-box div {
+    
+    width: 80%;
+    min-height: 70px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgb(67, 110, 250), rgb(152, 152, 255));
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+#todo-box div input{
+    
+    width: 60%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 19px;
+    margin: 5px;
+
+
+}
+
+#todo-box div button{
+    
+    width: 20%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 19px;
+    font-weight: 700;
+    font-family: 'Alegreya SC', serif;
+    transition-duration: 0.5s;
+    margin: 5px;
+    
+
+}
+
+#todo-box div button:hover {
+    cursor: pointer;
+    transform:scale(1.05);
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+}
+
+#tasks div {
+    width: 100%;
+    padding: 5px;
+   
+}
+
+
+

@@ -21,7 +21,6 @@ display: flex;
 align-items: center;
 justify-content: center;
 font-size: 2rem;
-border-bottom: solid 1px rgba(244, 247, 63, 0.3);
 margin-bottom: 5vh;
 }
 
@@ -29,14 +28,35 @@ nav h1 {
     font-family: 'Architects Daughter', cursive;
 }
 
+#score-life {
+    width: 15vw;
+    height: 20vh;
+    margin: 4vh;
+    background-color:rgba(255, 255, 255, 0.7);
+    border: solid 2px black;
+    box-shadow: 5px 10px 15px rgb(0, 0, 0);
+}
+
+#score-life span {
+    border-left: none;
+    font-size: 1.5rem;
+}
+
+#score {
+    font-size: 2rem;
+    width: 5vw;
+}
+
+.position-right {
+    float: right;
+    padding: 5px;
+}
 
 #todo-box {
     
     min-height: 300px;
     width: 40%;
     margin: 0 auto;
-    
-
 }
 
 #todo-box div {
@@ -82,6 +102,11 @@ nav h1 {
 
 }
 
+#todo-box div button:active {
+    background-color:rgb(143, 143, 143);  
+    transition-duration: 0.1s;
+}
+
 #todo-box div button:hover {
     cursor: pointer;
     transform:scale(1.05);
@@ -118,6 +143,7 @@ span {
     padding: 5px;
     border-left: solid 5px rgba(247, 248, 248, 0.9);
     overflow: hidden;
+    cursor: pointer;
 }
 
 .accomplished {

@@ -2,6 +2,9 @@ const addButton = document.getElementById('add-button');
 const inputLine = document.querySelector('input');
 const myTasks = document.querySelector('#tasks');
 const scoreKeeper = document.getElementById('score');
+let countCompletions = 0;
+scoreKeeper.innerHTML = countCompletions;
+
 
 addButton.onclick = function () {
    if (inputLine.value.length == 0) {
@@ -26,6 +29,7 @@ addButton.onclick = function () {
        for(let i = 0; i < tasksPending.length; i++) {
            tasksPending[i].onclick = function () {
                this.classList.toggle("accomplished");
+               scoreKeeper.innerHTML = ++countCompletions;
            }
        }
        inputLine.value = "";
